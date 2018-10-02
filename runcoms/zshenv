@@ -9,3 +9,8 @@
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+### History
+export HISTFILE="$HOME/.zsh_history"
+export HISTSIZE=10000000
+export SAVEHIST=10000000
