@@ -10,6 +10,8 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+source ~/.zsh-better-npm-completion/zsh-better-npm-completion.plugin.zsh
+
 # Customize to your needs...
 source /Users/zx1986/.env
 source ~/.aliases
@@ -33,4 +35,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 eval $(thefuck --alias)
 
 # Completions
-#fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(/usr/local/share/zsh-completions $fpath)
